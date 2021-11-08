@@ -37,7 +37,7 @@
         android:layout_width="147dp"
         android:layout_height="167dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/baron_buuton"
+        android:background="@drawable/radius_classsss"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
