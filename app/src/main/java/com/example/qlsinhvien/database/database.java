@@ -69,5 +69,19 @@ public class database extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+    //Insert môn học
+    public void AddSubjects(Subject subject){
+        SQLiteDatabase db = this.getWritableDatabase();
 
+        //không thể lưu trực tiếp xuống insert nên thông qua contentvalues
+        ContentValues values = new ContentValues();
+        values.put(SUBJECT_TITLE,subject.getSubject_title());
+        values.put(CREDITS,subject.getNumber_of_credits());
+        values.put(TIME,subject.getTime());
+        values.put(PLACE,subject.getPlace());
+
+        db.insert(TABLE_SUBJECTS,null,values);
+        //đóng lại db cho an toàn
+        db.close();
+    }
 }
