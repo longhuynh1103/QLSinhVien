@@ -128,4 +128,10 @@ public class database extends SQLiteOpenHelper{
         int res = db.delete(TABLE_SUBJECTS,ID_SUBJECTS+" = "+i,null);
         return res;
     }
+    //xóa student
+    public int DeleteSubjectStudent(int i){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int res = db.delete(TABLE_STUDENT,ID_SUBJECTS+" = "+i,null);
+        return res;
+    }
 }
