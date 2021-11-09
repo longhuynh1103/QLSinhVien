@@ -13,7 +13,6 @@ import android.widget.ProgressBar;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-//    sdsdhfiuw
 
     private FirebaseAuth mAuth;
     ImageButton btnSubjects, btnAuthor, btnSignOut,btnExit;
