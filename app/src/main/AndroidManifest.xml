@@ -10,14 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QLSinhVien">
         <activity
-            android:name=".ActivityUpdateStudent"
-            android:exported="true" />
-        <activity
-            android:name=".ActivityAddStudent"
-            android:exported="true" />
-        <activity
             android:name=".ActivityInformationStudent"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ActivityInformationSubject"
             android:exported="false" />
