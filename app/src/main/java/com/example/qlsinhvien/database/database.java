@@ -150,4 +150,10 @@ public class database extends SQLiteOpenHelper{
         //đóng lại db cho an toàn
         db.close();
     }
+    //Lấy tất sinh viên thuộc môn học đó
+    public Cursor getDataStudent(int id_subject){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_STUDENT+" WHERE "+ID_SUBJECTS+" = "+id_subject,null);
+        return res;
+    }
 }
