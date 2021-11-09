@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QLSinhVien">
         <activity
+            android:name=".ActivityUpdateStudent"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityAddStudent"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityInformationStudent"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityInformationSubject"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUpdateSubject"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAddSubjects"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityStudent"
+            android:exported="false" />
+        <activity
             android:name=".ActivitySubjects"
             android:exported="true" />
         <activity
@@ -29,7 +50,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
