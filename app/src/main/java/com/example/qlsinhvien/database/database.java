@@ -134,4 +134,20 @@ public class database extends SQLiteOpenHelper{
         int res = db.delete(TABLE_STUDENT,ID_SUBJECTS+" = "+i,null);
         return res;
     }
+    //Insert student
+    public void AddStudent(Student student){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        //không thể lưu trực tiếp xuống insert nên thông qua contentvalues
+        ContentValues values = new ContentValues();
+        values.put(STUDENT_NAME,student.getStudent_name());
+        values.put(SEX,student.getSex());
+        values.put(STUDENT_CODE,student.getStudent_code());
+        values.put(DATE_OF_BIRTH,student.getDate_of_birth());
+        values.put(ID_SUBJECTS,student.getId_subject());
+
+        db.insert(TABLE_STUDENT,null,values);
+        //đóng lại db cho an toàn
+        db.close();
+    }
 }
