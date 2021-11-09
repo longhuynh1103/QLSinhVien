@@ -9,12 +9,14 @@
         <entry key="..\:/QLSinhVien/app/src/main/res/drawable/radius_classsss.xml" value="0.2911458333333333" />
         <entry key="..\:/QLSinhVien/app/src/main/res/drawable/radius_exit.xml" value="0.2869791666666667" />
         <entry key="..\:/QLSinhVien/app/src/main/res/drawable/radiuss_exitt.xml" value="0.2869791666666667" />
+        <entry key="..\:/QLSinhVien/app/src/main/res/layout/activity_information_subject.xml" value="0.15416666666666667" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/activity_login.xml" value="0.275" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/activity_register.xml" value="0.26944444444444443" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/activity_reset_password.xml" value="0.275" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/activity_subjects.xml" value="0.275" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/dialogdeletestudent.xml" value="0.275" />
+        <entry key="..\:/QLSinhVien/app/src/main/res/layout/dialogdeletesubject.xml" value="0.15416666666666667" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/dialogexit.xml" value="0.275" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/dialoginformation.xml" value="0.275" />
         <entry key="..\:/QLSinhVien/app/src/main/res/layout/liststudent.xml" value="0.15364583333333334" />
