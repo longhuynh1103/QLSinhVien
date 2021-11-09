@@ -156,4 +156,10 @@ public class database extends SQLiteOpenHelper{
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_STUDENT+" WHERE "+ID_SUBJECTS+" = "+id_subject,null);
         return res;
     }
+    //xóa student
+    public int DeleteStudent(int i){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int res = db.delete(TABLE_STUDENT,ID_STUDENT+" = "+i,null);
+        return res;
+    }
 }
