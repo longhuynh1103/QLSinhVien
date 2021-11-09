@@ -116,5 +116,11 @@ public class database extends SQLiteOpenHelper{
         Log.e("Ok : ",id+" - id "+values.get(STUDENT_NAME)+" + "+values.get(SEX)+" + "+values.get(STUDENT_CODE)+" + "+values.get(DATE_OF_BIRTH));
         return true;
     }
+    //Lấy tất mon hoc
+    public Cursor getDataSubjects(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_SUBJECTS,null);
+        return res;
+    }
 
 }
