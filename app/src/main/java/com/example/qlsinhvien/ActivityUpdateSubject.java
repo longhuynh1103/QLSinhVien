@@ -82,7 +82,7 @@ public class ActivityUpdateSubject extends AppCompatActivity {
                 Subject subject = updatesubject();
 
                 if(subjecttitle.equals("") || credits.equals("") || time.equals("") || place.equals("")){
-                    Toast.makeText(ActivityUpdateSubject.this,"Did not enter enough information",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityUpdateSubject.this,"Nhập không đủ thông tin",Toast.LENGTH_SHORT).show();
                 }
                 else {
 
@@ -91,7 +91,7 @@ public class ActivityUpdateSubject extends AppCompatActivity {
                     Intent intent = new Intent(ActivityUpdateSubject.this,ActivitySubjects.class);
 
                     startActivity(intent);
-                    Toast.makeText(ActivityUpdateSubject.this,"more success",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityUpdateSubject.this,"Cập nhật thành công",Toast.LENGTH_SHORT).show();
                 }
             }
         });

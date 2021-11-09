@@ -91,7 +91,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
                 Student student = updateStudent();
 
                 if(name.equals("") || code.equals("") || birthday.equals("") ){
-                    Toast.makeText(ActivityUpdateStudent.this,"Did not enter enough information",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityUpdateStudent.this,"Nhập không đủ thông tin",Toast.LENGTH_SHORT).show();
                 }
                 else {
                     database.UpdateStudent(student,id);
@@ -99,7 +99,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
                     Intent intent = new Intent(ActivityUpdateStudent.this,ActivityStudent.class);
                     intent.putExtra("id_subject",id_subject);
                     startActivity(intent);
-                    Toast.makeText(ActivityUpdateStudent.this,"more success",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityUpdateStudent.this,"Cập nhật thành công",Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -27,10 +27,10 @@ public class ActivityInformationStudent extends AppCompatActivity {
         String name = intent.getStringExtra("name");
         String sex = intent.getStringExtra("sex");
         String code = intent.getStringExtra("code");
-        String birhday = intent.getStringExtra("birthday");
+        String birthday = intent.getStringExtra("birthday");
 
         edtCode.setText(code);
-        edtBirthday.setText(birhday);
+        edtBirthday.setText(birthday);
         edtSex.setText(sex);
         edtName.setText(name);
     }

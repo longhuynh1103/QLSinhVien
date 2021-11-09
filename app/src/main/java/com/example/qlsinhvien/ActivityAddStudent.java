@@ -81,7 +81,7 @@ public class ActivityAddStudent extends AppCompatActivity {
                 }
 
                 if(name.equals("") || code.equals("") || birthday.equals("") || sex.equals("")){
-                    Toast.makeText(ActivityAddStudent.this,"Did not enter enough information",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityAddStudent.this,"Nhập không đủ thông tin",Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Student student = CreatStudent(id_subject);
@@ -92,7 +92,7 @@ public class ActivityAddStudent extends AppCompatActivity {
                     //finish();
                     intent.putExtra("id_subject",id_subject);
                     startActivity(intent);
-                    Toast.makeText(ActivityAddStudent.this,"more success",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityAddStudent.this,"Thêm thành công",Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -66,7 +66,7 @@ public class ActivityAddSubjects extends AppCompatActivity {
                 String place = edtPlace.getText().toString();
 
                 if(subjecttitle.equals("") || credits.equals("") || time.equals("") || place.equals("")){
-                    Toast.makeText(ActivityAddSubjects.this,"Did not enter enough information",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityAddSubjects.this,"Nhập không đủ thông tin",Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Subject subject = CreatSubject();
@@ -76,7 +76,7 @@ public class ActivityAddSubjects extends AppCompatActivity {
                     Intent intent = new Intent(ActivityAddSubjects.this,ActivitySubjects.class);
                     //finish();
                     startActivity(intent);
-                    Toast.makeText(ActivityAddSubjects.this,"more success",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityAddSubjects.this,"Thêm thành công",Toast.LENGTH_SHORT).show();
                 }
             }
         });
