@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#ACA388"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="246dp"
+        android:layout_height="117dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/TextViewStudentName"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:text="Tên sinh viên"
+            android:textColor="#000000"
+            android:textSize="22sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSSV : "
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/TextViewCode"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:text="187PM00000"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/studentinformation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_subject_24"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/studentupdate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_update_24"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/studentdelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+</LinearLayout>
