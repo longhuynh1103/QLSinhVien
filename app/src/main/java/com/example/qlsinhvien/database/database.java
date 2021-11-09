@@ -84,4 +84,20 @@ public class database extends SQLiteOpenHelper{
         //đóng lại db cho an toàn
         db.close();
     }
+    //cập nhật môn học
+    public boolean UpdateSubject(Subject subject, int id){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put(SUBJECT_TITLE,subject.getSubject_title());
+        values.put(CREDITS,subject.getNumber_of_credits());
+        values.put(TIME,subject.getTime());
+        values.put(PLACE,subject.getPlace());
+
+        db.update(TABLE_SUBJECTS,values,ID_SUBJECTS+" = "+id,null);
+        Log.e("Ok : ",id+" - id "+values.get(SUBJECT_TITLE)+" + "+values.get(CREDITS)+" + "+values.get(TIME)+" + "+values.get(PLACE));
+        return true;
+    }
 }
