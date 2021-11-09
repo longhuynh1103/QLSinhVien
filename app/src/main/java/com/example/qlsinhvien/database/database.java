@@ -122,5 +122,10 @@ public class database extends SQLiteOpenHelper{
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_SUBJECTS,null);
         return res;
     }
-
+    //xóa môn học
+    public int DeleteSubject(int i){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int res = db.delete(TABLE_SUBJECTS,ID_SUBJECTS+" = "+i,null);
+        return res;
+    }
 }
